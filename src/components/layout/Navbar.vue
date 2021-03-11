@@ -16,7 +16,7 @@
         class="d-flex px-0"
         :class="drawermini ? 'justify-center' : 'justify-end'"
       >
-        <reload-btn />
+        <reload-btn class="mr-2"/>
         <b-f />
       </v-list-item>
       <v-list-item
@@ -25,7 +25,7 @@
       >
         <default-account :class="drawermini ? 'mb-4' : undefined " />
         <div class="nav_actions">
-          <setting-toggle />
+          <setting-toggle class="mr-2"/>
           <theme-toggle />
         </div>
       </v-list-item>

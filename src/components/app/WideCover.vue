@@ -1,8 +1,6 @@
 <template>
   <v-card
     rounded="lg"
-    flat
-    dark
   >
     <v-img
       :aspect-ratio="16/9"

@@ -1,5 +1,5 @@
 <template>
-  <div class="cover-container">
+  <v-card class="cover-container pa-2 rounded-lg">
     <v-hover v-slot="{ hover }">
       <v-card
         v-ripple
@@ -7,7 +7,6 @@
         rounded="lg"
         class="d-flex align-end justify-end cover-card"
         elevation="0"
-        :class="{'cover-hover' : hover}"
         :to="`/video/${id}`"
       >
         <v-img
@@ -61,7 +60,7 @@
       </router-link>
       {{ $t('main.play_count', [count]) }}
     </span>
-  </div>
+  </v-card>
 </template>
 
 <script>

@@ -64,7 +64,7 @@
           </div>
           <div class="list-action">
             <v-btn
-              elevation="0"
+              plain
               class="mr-4"
               @click="play"
             >

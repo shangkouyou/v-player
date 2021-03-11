@@ -1,0 +1,33 @@
+.theme--light {
+  &.v-application {
+    background-color: #e6e7ee !important;
+  }
+  &.v-navigation-drawer {
+    background-color: #e6e7ee !important;
+  }
+  &.v-app-bar.v-toolbar.v-sheet {
+    background-color: #e6e7ee !important;
+  }
+  &.v-sheet {
+    background-color: #e6e7ee !important;
+  }
+  &.v-btn {
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff !important;
+  }
+  &.v-list-item--active:not(.v-list-group__header){
+    box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff !important;
+  }
+}
+.theme--dark {
+  &.v-btn {
+    box-shadow:  9px 9px 18px #292929,
+    -9px -9px 18px #3d3d3d !important;
+  }
+  &.v-list-item--active:not(.v-list-group__header){
+    box-shadow:  9px 9px 18px #292929,
+    -9px -9px 18px #3d3d3d !important;
+  }
+}
+.v-sheet.v-card:not(.v-sheet--outlined) {
+  box-shadow: 6px 6px 12px #b8b9be,-6px -6px 12px #fff !important;
+}

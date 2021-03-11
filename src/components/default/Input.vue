@@ -4,7 +4,7 @@
     ref="search"
     v-model="model"
     :background-color="bgColor"
-    class="rounded-lg text-caption"
+    class="rounded-lg text-caption input-field"
     :placeholder="placeholder"
     :type="type"
     autocomplete="off"
@@ -65,13 +65,13 @@ export default {
       return this.isFocused ? '' : this.holder;
     },
     bgColor() {
-      let color = void 0;
+      let color = '#e6e7ee';
       if (this.theme.isDark) {
         return color;
       }
-      if (this.isFocused) {
-        color = 'secondary lighten-5';
-      }
+      // if (this.isFocused) {
+      //   color = 'secondary lighten-5';
+      // }
       return color;
     },
   },
@@ -98,3 +98,10 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+.input-field {
+  ::v-deep .v-input__slot {
+    box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  }
+}
+</style>

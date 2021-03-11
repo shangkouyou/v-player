@@ -3,6 +3,7 @@
     <v-btn
       small
       icon
+      class="mr-2"
       @click="$router.go(-1)"
     >
       <v-icon>

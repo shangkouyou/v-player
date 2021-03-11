@@ -3,11 +3,10 @@
     app
     fixed
     dense
-    elevate-on-scroll
-    :color="theme.isDark ? void 0 : 'white'"
+    flat
     class="app_header"
   >
-    <drawer-toggle />
+    <drawer-toggle class="ml-0"/>
     <v-spacer />
     <default-input
       v-model="keywords"

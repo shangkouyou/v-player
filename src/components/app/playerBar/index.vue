@@ -92,7 +92,10 @@
               class="ml-8"
               @click="likeSong"
             >
-              <div :style="`${liked ? 'color: var(--v-primary-base)' : ''}`">
+              <div
+                :style="`${liked ? 'color: var(--v-primary-base)' : ''}`"
+                class="d-flex"
+              >
                 <font-awesome-icon icon="heart" />
               </div>
             </v-btn>
@@ -104,9 +107,8 @@
             </v-btn>
             <v-fab-transition origin="center center">
               <v-btn
-                :key="playingState.icon"
+                large
                 icon
-                elevation="0"
                 @click="playPause"
               >
                 <div :style="`color: ${playingState.color};`">
@@ -324,7 +326,7 @@ export default {
 <style lang="scss" scoped>
 @import 'src/scss/common';
 .theme--light .playing-bar {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: #e0e0e0;
 }
 .theme--dark .playing-bar {
   background-color: rgba(0, 0, 0, .5);
@@ -387,9 +389,14 @@ export default {
     }
   }
   .playing-slider {
+    -webkit-app-region: no-drag;
     position: absolute;
     top: -6px;
     width: 100%;
+  }
+  ::v-deep .v-btn {
+    box-shadow:  4px 4px 7px #bebebe,
+    -4px -4px 7px #ffffff;
   }
 }
 </style>
