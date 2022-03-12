@@ -80,15 +80,7 @@ module.exports = {
           category: 'public.app-category.music',
         },
         linux: {
-          target: [
-            'AppImage',
-            'snap',
-            'deb',
-            'rpm',
-            'freebsd',
-            'pacman',
-            'tar.xz',
-          ],
+          target: ['AppImage', 'deb', 'rpm', 'freebsd', 'pacman', 'tar.xz'],
           category: 'Audio',
         },
         nsis: {
